@@ -1,8 +1,6 @@
 bracket();
 translate([-7,-7,4])rotate([0,90,90])clamp();
 
-//rotate([-90,0,0]) bracket();
-
 module bracket(){
 $fn=60;
 difference(){
@@ -27,8 +25,8 @@ cylinder(d=5.5,h=10);
 
 module clamp(){
 difference(){
-translate([-7,-10,0])
-cube([14,20,15]);
+translate([-7,-10.5,0])
+cube([14,21,15]);
 difference(){
     cylinder(d=13,h=25,$fn=60);
     translate([6.5,0,12])cube([2,12,25],center=true);
